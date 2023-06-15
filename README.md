@@ -5,24 +5,24 @@ Creates network
 
 Set the variables below according to your needs:
 
-- region
 - project
+- region
 - subnet_counts     -> this value is used to create subnets for diferents AZ´s and for asg-max and asg-desired
 
 ## Example:
 
-- region            -> "us-east-1"
 - project           -> "tf-network"
+- region            -> "us-east-1"
 - subnet_counts     -> 4
 
 # outputs
 
 Some key fields about infrastructure created will be returned:
 
+- vpc-id
 - avaiable_zones
 - private-subnet-ids [] -> list(string)
 - public-subnet-ids [] -> list(string)
-- vpc-id
 
 # TF commands
 
